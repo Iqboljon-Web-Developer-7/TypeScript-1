@@ -93,8 +93,14 @@ const average = (arr) => arr.reduce((prev, current) => prev + current, 0) / arr.
 // console.log(average([1, 2, 3, 4]));
 // 12-misol
 function filterArr(arr) {
-    let helper = [];
-    arr.reduce((prev, current) => prev == current && helper.push(current));
-    return helper;
+    let seen = new Set();
+    return arr.filter((item) => {
+        if (seen.has(item)) {
+            return true;
+        }
+        seen.add(item);
+        return false;
+    });
 }
-console.log(filterArr([1, 1, 2, 2, 3, 4]));
+let array = [1, 1, 2, 2, 3, 4];
+console.log(filterArr(array));
