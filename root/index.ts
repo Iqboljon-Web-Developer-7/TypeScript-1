@@ -40,3 +40,13 @@ function fizzBuzz(n: number): void {
   }
 }
 fizzBuzz(15);
+
+// 4 - misol
+function sumArray(arr: number[]): number {
+  let sum: number = 0;
+
+  arr.forEach((item: number) => (sum += item));
+  return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
