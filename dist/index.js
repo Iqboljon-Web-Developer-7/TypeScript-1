@@ -81,3 +81,16 @@ function reverseArray(arr) {
     return arr.reverse();
 }
 // console.log(reverseArray([1, 2, 3, 4, 5, 6]));
+// 10-misol
+function capitalizeWords(str) {
+    let res = "";
+    res = str
+        .split(" ")
+        .map((item) => {
+        let helper = item[0].toUpperCase();
+        return `${helper}${item.slice(1)}`;
+    })
+        .join(" ");
+    return res;
+}
+// console.log(capitalizeWords("Hello world salom"));
