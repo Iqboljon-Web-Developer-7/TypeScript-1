@@ -93,3 +93,9 @@ function contains(arr: (number | string)[], target: string | number): boolean {
 }
 
 // console.log(contains([1, 2, 3, "salom", 4], "salom"));
+// 9-misol
+function reverseArray(arr: (number | string)[]): (string | number)[] {
+  return arr.reverse();
+}
+
+// console.log(reverseArray([1, 2, 3, 4, 5, 6]));

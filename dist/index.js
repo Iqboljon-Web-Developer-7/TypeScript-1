@@ -76,3 +76,8 @@ function contains(arr, target) {
     return false;
 }
 // console.log(contains([1, 2, 3, "salom", 4], "salom"));
+// 9-misol
+function reverseArray(arr) {
+    return arr.reverse();
+}
+// console.log(reverseArray([1, 2, 3, 4, 5, 6]));
