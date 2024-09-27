@@ -39,7 +39,7 @@ function fizzBuzz(n: number): void {
     }
   }
 }
-fizzBuzz(15);
+// fizzBuzz(15);
 
 // 4 - misol
 function sumArray(arr: number[]): number {
@@ -49,4 +49,15 @@ function sumArray(arr: number[]): number {
   return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// 5 - misol
+function countWords(str: string): number {
+  let res: number = str.split(" ").length;
+
+  return res;
+}
+
+// console.log(countWords("Hello, world"));
+
+// 6 - misol
