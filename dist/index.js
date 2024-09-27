@@ -51,3 +51,11 @@ function countWords(str) {
 }
 // console.log(countWords("Hello, world"));
 // 6 - misol
+function findMax(arr) {
+    let res = 0;
+    arr.forEach((item) => {
+        item > res ? (res = item) : null;
+    });
+    return res;
+}
+// console.log(findMax([1, 2, 3, 4, 5, 6, 1, 2, 3]));

@@ -61,3 +61,13 @@ function countWords(str: string): number {
 // console.log(countWords("Hello, world"));
 
 // 6 - misol
+function findMax(arr: number[]): number {
+  let res: number = 0;
+
+  arr.forEach((item: number) => {
+    item > res ? (res = item) : null;
+  });
+
+  return res;
+}
+// console.log(findMax([1, 2, 3, 4, 5, 6, 1, 2, 3]));
