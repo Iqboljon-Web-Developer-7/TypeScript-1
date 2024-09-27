@@ -52,19 +52,13 @@ function countWords(str) {
 // console.log(countWords("Hello, world"));
 // 6 - misol
 function findMax(arr) {
-    let res = 0;
-    arr.forEach((item) => {
-        item > res && (res = item);
-    });
+    let res = Math.max(...arr);
     return res;
 }
 // console.log(findMax([1, 2, 3, 4, 5, 6, 1, 2, 3]));
 // 7 - misol
 function findMin(arr) {
-    let res = arr[0];
-    arr.forEach((item) => {
-        item < res && (res = item);
-    });
+    let res = Math.min(...arr);
     return res;
 }
 // console.log(findMin([9, 2, 3, 4, 1, 2, 3, 4]));
@@ -94,3 +88,13 @@ function capitalizeWords(str) {
     return res;
 }
 // console.log(capitalizeWords("Hello world salom"));
+// 11-misol
+const average = (arr) => arr.reduce((prev, current) => prev + current, 0) / arr.length;
+// console.log(average([1, 2, 3, 4]));
+// 12-misol
+function filterArr(arr) {
+    let helper = [];
+    arr.reduce((prev, current) => prev == current && helper.push(current));
+    return helper;
+}
+console.log(filterArr([1, 1, 2, 2, 3, 4]));

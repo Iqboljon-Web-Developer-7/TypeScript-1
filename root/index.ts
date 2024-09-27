@@ -62,24 +62,14 @@ function countWords(str: string): number {
 
 // 6 - misol
 function findMax(arr: number[]): number {
-  let res: number = 0;
-
-  arr.forEach((item: number) => {
-    item > res && (res = item);
-  });
-
+  let res: number = Math.max(...arr);
   return res;
 }
 // console.log(findMax([1, 2, 3, 4, 5, 6, 1, 2, 3]));
 
 // 7 - misol
 function findMin(arr: number[]): number {
-  let res: number = arr[0];
-
-  arr.forEach((item: number) => {
-    item < res && (res = item);
-  });
-
+  let res: number = Math.min(...arr);
   return res;
 }
 // console.log(findMin([9, 2, 3, 4, 1, 2, 3, 4]));
@@ -115,3 +105,17 @@ function capitalizeWords(str: string): string {
 }
 
 // console.log(capitalizeWords("Hello world salom"));
+// 11-misol
+const average = (arr: number[]) =>
+  arr.reduce((prev, current) => prev + current, 0) / arr.length;
+
+// console.log(average([1, 2, 3, 4]));
+
+// 12-misol
+function filterArr(arr: any[]): number[] {
+  let helper: number[] = [];
+  arr.reduce((prev, current) => prev == current && helper.push(current));
+  return helper;
+}
+
+console.log(filterArr([1, 1, 2, 2, 3, 4]));
