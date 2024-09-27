@@ -83,3 +83,13 @@ function findMin(arr: number[]): number {
   return res;
 }
 // console.log(findMin([9, 2, 3, 4, 1, 2, 3, 4]));
+
+// 8-misol
+function contains(arr: (number | string)[], target: string | number): boolean {
+  if (arr.includes(target)) {
+    return true;
+  }
+  return false;
+}
+
+// console.log(contains([1, 2, 3, "salom", 4], "salom"));
