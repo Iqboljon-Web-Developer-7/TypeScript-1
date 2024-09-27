@@ -65,9 +65,21 @@ function findMax(arr: number[]): number {
   let res: number = 0;
 
   arr.forEach((item: number) => {
-    item > res ? (res = item) : null;
+    item > res && (res = item);
   });
 
   return res;
 }
 // console.log(findMax([1, 2, 3, 4, 5, 6, 1, 2, 3]));
+
+// 7 - misol
+function findMin(arr: number[]): number {
+  let res: number = arr[0];
+
+  arr.forEach((item: number) => {
+    item < res && (res = item);
+  });
+
+  return res;
+}
+// console.log(findMin([9, 2, 3, 4, 1, 2, 3, 4]));
