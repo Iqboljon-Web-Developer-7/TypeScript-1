@@ -1,3 +1,1 @@
-# TypeScript-1
-# TypeScript-1
-# TypeScript-1
+# TypeScript first time impressions
